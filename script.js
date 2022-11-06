@@ -20,7 +20,10 @@ function generatePassword() {
    return
   }
 
-  
+  var userWantsNumbers = window.confirm("Would you like to include numbers in your password?")
+  var userWantsSymbols = window.confirm("Would you like to include symbols in your password?")
+  var userWantsLowercaseletters = window.confirm("Would you like to include lowercase letters in your password?")
+  var userWantsUppercaseletters = window.confirm("Would you like to include uppercase letters in your password?")  
 }
 
 

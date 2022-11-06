@@ -66,12 +66,13 @@ function generatePassword() {
    var RandomChar = getRandomItem(randomList)
    generatePassword += RandomChar
  }
-//this code below generates the password in the console from the for loop. This is also where the function ends//
- console.log(generatePassword)
+//this code below generates the password in the console from the for loop. This is also where the function ends. Then the generate password is returned and is called later in line 76-77.//
+ 
+ return generatePassword
 }
+//return is to get some value back from the functions to be used more often//
 
-
-// Write password to the #password input
+// Write password to the #password input//
 function writePassword() {
    var password = generatePassword();
    var passwordText = document.querySelector("#password");

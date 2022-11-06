@@ -53,9 +53,14 @@ function generatePassword() {
  if (userWantsUppercaseletters === true){
     optionsCart.push(UppercaseList)
  }
+/*makes it so that the list will generate to lowercase by default if nothing is chosen in above lists*/
+ if (optionsCart.length === 0) {
+   optionsCart.push(lowercaseList)
+ }
 
  var generatePassword = ""
 
+ /* this is the for loop  */
  for (var i = 0; i < passwordLength;i++){
    var randomList = getRandomItem(optionsCart)
    var RandomChar = getRandomItem(randomList)

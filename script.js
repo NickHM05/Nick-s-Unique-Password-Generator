@@ -59,8 +59,10 @@ function generatePassword() {
  for (var i = 0; i < passwordLength;i++){
    var randomList = getRandomItem(optionsCart)
    var RandomChar = getRandomItem(randomList)
-   console.log(RandomChar)
+   generatePassword += RandomChar
  }
+
+ console.log(generatePassword)
 }
 
 

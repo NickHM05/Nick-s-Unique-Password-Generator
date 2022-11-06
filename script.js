@@ -60,13 +60,13 @@ function generatePassword() {
 
  var generatePassword = ""
 
- /* this is the for loop  */
+ // this is the for loop  //
  for (var i = 0; i < passwordLength;i++){
    var randomList = getRandomItem(optionsCart)
    var RandomChar = getRandomItem(randomList)
    generatePassword += RandomChar
  }
-
+//this code below generates the password in the console from the for loop. This is also where the function ends//
  console.log(generatePassword)
 }
 

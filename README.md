@@ -20,7 +20,7 @@ Enter the URL from the website. My website:https://nickhm05.github.io/Unique-Pas
 
 URL of the github repository:https://github.com/NickHM05/Unique-Password-Generator
 ## Usage
-![Screenshot of the page](./assets/images/ "Screenshot Page")
+![Screenshot of the page](./assets/images/UniquePasswordGeneratorImage.png "Screenshot Page")
 
 
 ## Credits

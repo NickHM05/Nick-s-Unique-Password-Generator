@@ -8,7 +8,7 @@ Making a unique password generator for the user to create their own password in 
 
 ## Table of Contents
 
-- [Descritption](#description)
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)

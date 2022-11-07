@@ -18,7 +18,14 @@ function generatePassword() {
  */ 
  
 while(true) {
+  
    var userInput = window.prompt("How long will your password be?")
+
+   if (userInput === null) {
+      return
+   } 
+   //the code above is used if the user exited the prompt
+
    var passwordLength = parseInt(userInput)
 
    if (isNaN(passwordLength)) {

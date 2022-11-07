@@ -16,9 +16,9 @@ Making a unique password generator for the user to create their own password in 
 
 ## Installation
 
-Enter the URL from the website. My website:
+Enter the URL from the website. My website:https://nickhm05.github.io/Unique-Password-Generator/
 
-URL of the github repository:
+URL of the github repository:https://github.com/NickHM05/Unique-Password-Generator
 ## Usage
 ![Screenshot of the page](./assets/images/ "Screenshot Page")
 

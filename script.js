@@ -10,21 +10,27 @@ function randomInt(min, max){
  }
 
 function generatePassword() {
-  
-   var userInput = window.prompt("How long will your password be?")
 
+ /*NaN stands for is not a number. 
+ Also whats happening is if its not a valid input then alert the user. 
+ However, if it is a valid input, if the input is LESS than 8 and GREATER than 128, send the window alert explaining what to do to the user. 
+ Then the loop is broken using the break command in code once the true conditions of between 8 to 128 characters and is a number to the password length is met. 
+ */ 
+ 
+while(true) {
+   var userInput = window.prompt("How long will your password be?")
    var passwordLength = parseInt(userInput)
 
- /*NaN stands for is not a number. */ 
-  if (isNaN(passwordLength)) {
-    window.alert("That's not a number!")
-    return
- }
-
- if (passwordLength < 8 || passwordLength > 128) {
-   window.alert("Password character length must be between 8 and 128 characters in order to continue")
-   return
+   if (isNaN(passwordLength)) {
+   window.alert("That's not a number!")
+  }  else if (passwordLength < 8 || passwordLength > 128) {
+   window.alert("Invalid password length. The lenght should be between 8 and 128 characters.")
+  } else {
+   break
   }
+
+   
+}
 
   var userWantsNumbers = window.confirm("Would you like to include numbers in your password?")
   var userWantsSymbols = window.confirm("Would you like to include symbols in your password?")

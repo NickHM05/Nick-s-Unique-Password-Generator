@@ -1,8 +1,13 @@
 # Unique-Password-Generator
 
 ## Description
+The motivation behind this project was to get a better handle of using javascript to create something semi-useful with what we have learned.
 
-Making a unique password generator for the user to create their own password in several ways using either symbols, numbers, lower case letters, and/or uppercase letters.
+This project was made to create a unique password generator for the user to create their own password in several ways using either symbols, numbers, lower case letters, and/or uppercase letters.They can then copy the password and use it at their own discretion.
+
+In turn, this project solves the problem of thinking of a unique password for different websites and accurately fits the needs of modern websites by following criteria such as using, uppercase letters, lowercase letters, special characters, and numbers in a given password.
+
+I learned about how to use the proper ways to use functions, methods, else if statements, loops, and more methodologies from javascript in order to create an application for use and to solve every type of user input into an application. If the user found a way to break the application it would not seem that useful.
 
 
 
@@ -30,7 +35,7 @@ URL of the github repository:https://github.com/NickHM05/Unique-Password-Generat
 - Miguel Montenegro https://github.com/Darkunitx
 - Salahuddin Imdad https://github.com/Sal8298
 
-Resource used: 
+Resource used: Tutorials from SoloLearn app and class activities. Mdn website was used for some unique code as well.
 
 ## License
 

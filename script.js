@@ -36,6 +36,7 @@ while(true) {
 
    if (isNaN(passwordLength)) {
    window.alert("That's not a number!")
+   // || means that either condition has to be true. So the length has to be greater than 8 and less than 128 in order to be true.
   }  else if (passwordLength < 8 || passwordLength > 128) {
    window.alert("Invalid password length. The length should be between 8 and 128 characters.")
   } else {

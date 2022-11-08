@@ -30,7 +30,8 @@ while(true) {
    if (userInput === null) {
       return
    } 
-   //the code above is used if the user exited the prompt
+   //the code above is used so that user is not stuck in an infinite prompt loop. 
+   //That way it returns out of the prompt by hitting cancel otherwise the user would have to close out the tab and we dont want that.
 
    var passwordLength = parseInt(userInput)
 
@@ -45,16 +46,22 @@ while(true) {
 
    
 }
-
+//these are all the prompt text used for each set of prompts. 
   var userWantsNumbers = window.confirm("Would you like to include numbers in your password?")
   var userWantsSymbols = window.confirm("Would you like to include symbols in your password?")
   var userWantsLowercaseletters = window.confirm("Would you like to include lowercase letters in your password?")
   var userWantsUppercaseletters = window.confirm("Would you like to include uppercase letters in your password?")  
 
+//These are the characters to be defined and use for each prompt. 
+
   var numberList = ["0","1","2","3","4","5","6","7","8","9"]
   var symbolList = ["!","@","#","$","%","^","&","*"]
   var lowercaseList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
   var UppercaseList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+
+/*optionsCart is what confirms each prompt of their conditional text used above and pushes it into the randomlist varaible.
+For example asking the user if they want numbers the variable will push from numbers list into the list for generating the password. 
+Each option chosen will be added or not by the user using their input.*/
 
   var optionsCart = []
 
@@ -86,7 +93,7 @@ while(true) {
    var RandomChar = getRandomItem(randomList)
    generatePassword += RandomChar
  }
-//this code below generates the password in the console from the for loop. This is also where the function ends. Then the generate password is returned and is called later in line 76-77.//
+//this code below generates the password in the console from the for loop. This is also where the function ends. Then the generate password is returned and is called later.
  
  return generatePassword
 }
@@ -97,6 +104,7 @@ function writePassword() {
    var password = generatePassword();
    var passwordText = document.querySelector("#password");
  
+   //if its not a password return the user back to starting the application again.
    if (!password)return
 
    if(password) {
